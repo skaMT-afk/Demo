@@ -1,0 +1,19 @@
+Python syntax: scripts/init_env.py
+Python syntax: scripts/smoke.py
+Project XML: valid
+YAML syntax: compose.yaml
+YAML syntax: .github/workflows/verify.yml
+Markdown: DFD.md
+Markdown: README.md
+Markdown: PROJECT.md
+Markdown: SUBMISSION.md
+Markdown: DESIGN.md
+Markdown: AI_USAGE.md
+Markdown: REQUIREMENTS.md
+Markdown: THREATS.md
+Markdown: CONTRIBUTIONS.md
+Markdown: docs/DEFENSE.md
+Markdown: docs/VERIFICATION.md
+Markdown: docs/CHECKS.md
+PASS static package checks: 38 existing relative file links; 10 SR, 9 T, 3 D, 9 V; no .env.
+NOT RUN: dotnet restore/build, Docker Compose, API smoke. SDK/Docker are absent.
