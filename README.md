@@ -6,6 +6,8 @@
 
 [Вклад](CONTRIBUTIONS.md) · [Использование ИИ](AI_USAGE.md) · [Статус проверок](docs/VERIFICATION.md) · [Сдача](SUBMISSION.md) · [Подготовка к защите](docs/DEFENSE.md).
 
+Для запуска на ноутбуке и показа ручек: **[инструкция Windows и сценарий демонстрации](docs/WINDOWS_DEMO.md)**. После запуска сервера: `python scripts/demo.py`.
+
 ## Запуск
 
 Нужны Docker Engine/Docker Desktop с Linux containers и Compose v2, Python 3.10+ для вспомогательных скриптов. На Windows откройте PowerShell/терминал VS Code в папке, где лежит compose.yaml. Если команда python не найдена, используйте py -3. Интернет нужен для первой сборки образов и загрузки NuGet. Локально устанавливать .NET SDK при Docker-запуске не нужно.
@@ -30,7 +32,7 @@ curl.exe http://127.0.0.1:8080/health
 {"status":"ok","database":"reachable"}
 ```
 
-Это ожидаемый результат, а не вставленный лог фактического запуска. В среде подготовки отсутствовали .NET/Docker; **до сдачи требуется подтвердить запуск**. См. [протокол](docs/VERIFICATION.md).
+Сборка, запуск Compose и smoke подтверждены в GitHub Actions; ссылки и область проверки — в [протоколе](docs/VERIFICATION.md). До защиты отдельно проверь запуск на своём ноутбуке.
 
 Остановка с сохранением данных:
 

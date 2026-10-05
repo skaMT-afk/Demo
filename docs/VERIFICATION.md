@@ -1,3 +1,15 @@
+# Актуальное подтверждение запуска — 2026-10-05
+
+Проверен успешный [GitHub Actions run 37124634094](https://github.com/skaMT-afk/Demo/actions/runs/37124634094) для commit `65d987faccb4617ed8fc4721111d6ac3a1ba1a79`: сборка Docker с dotnet restore/publish, запуск API/PostgreSQL и `python scripts/smoke.py` завершились успешно. В логе: `PASS: 57 HTTP status checks plus state, data isolation and concurrency assertions.`
+
+Также успешен [run 37350194802](https://github.com/skaMT-afk/Demo/actions/runs/37350194802) для commit `6786b2b00162df8db9f2f7f4f09ce75b5097d08a` с обновлённой DFD. Проверка выполнялась автоматически в GitHub Actions на Ubuntu, не на ноутбуке участника. Это не подтверждает все планы V-07–V-09 и не заменяет человеческую проверку/личный вклад.
+
+Добавленный `scripts/demo.py --auto` включён в workflow для последующих версий; его результат следует смотреть у соответствующего commit. Инструкция ноутбука: [WINDOWS_DEMO.md](WINDOWS_DEMO.md).
+
+Ниже сохранён исторический статус подготовки архива 3 октября: ограничения относятся к тому моменту, до запуска CI.
+
+---
+
 # Статус проверки комплекта
 
 Дата подготовки: 2026-10-03. Проверки ниже выполнялись ассистентом над файлами данного архива, не командой и не над опубликованным commit.

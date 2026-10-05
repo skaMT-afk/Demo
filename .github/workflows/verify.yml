@@ -14,5 +14,6 @@ jobs:
       - run: python scripts/init_env.py
       - run: docker compose up -d --build
       - run: python scripts/smoke.py
+      - run: python scripts/demo.py --auto
       - if: always()
         run: docker compose down -v
